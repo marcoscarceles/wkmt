@@ -17,7 +17,7 @@
 	</label>
 	
 <ul class="one-to-many">
-<g:each in="${studentInstance?.lessons?}" var="l">
+<g:each in="${studentInstance?.lessons?.reverse()}" var="l">
     <li><g:link controller="lesson" action="show" id="${l.id}"><g:formatDate date="${l?.date}" type="date" style="long"/></g:link></li>
 </g:each>
 <li class="add">

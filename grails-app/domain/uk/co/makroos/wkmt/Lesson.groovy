@@ -18,8 +18,9 @@ class Lesson {
 
     public Lesson createNext() {
         def lesson = new Lesson()
-        lesson.practiced = homework.clone()
-        lesson.homework = homework.clone()
+        lesson.practiced = this.homework.copy()
+        lesson.homework = this.homework.copy()
+        lesson.student = student
         lesson
     }
 }

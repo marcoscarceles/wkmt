@@ -19,9 +19,12 @@ class LessonController {
 
     def create() {
         def lesson = new Lesson(params)
-        lesson.practiced = new StudyBlock()
-        lesson.homework = new StudyBlock()
         respond lesson
+    }
+
+    def createNext(Lesson lessonInstance) {
+        def nextLesson = lessonInstance.createNext()
+        respond nextLesson, [view: 'create', model: [lessonInstance: nextLesson]]
     }
 
     def save(Lesson lessonInstance) {
@@ -44,11 +47,6 @@ class LessonController {
             }
             '*' { respond lessonInstance, [status: CREATED] }
         }
-    }
-
-    def createNext(Lesson lessonInstance) {
-        println "In Create Next!"
-        respond lessonInstance.createNext()
     }
 
     def edit(Lesson lessonInstance) {

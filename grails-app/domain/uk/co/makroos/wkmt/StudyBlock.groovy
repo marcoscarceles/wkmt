@@ -1,6 +1,6 @@
 package uk.co.makroos.wkmt
 
-class StudyBlock implements Cloneable {
+class StudyBlock {
 
     boolean scaleC
     boolean scaleAm
@@ -13,12 +13,15 @@ class StudyBlock implements Cloneable {
         exercises nullable: true, blank: false
     }
 
-    public StudyBlock clone() {
+    public StudyBlock copy() {
         def block = new StudyBlock()
-        block.scaleAm = scaleAm
-        block.scaleAm = scaleAm
-        block.exercises = exercises
-        block.lesson = block.lesson
+        block.scaleC = this.scaleC
+        block.scaleAm = this.scaleAm
+        block.exercises = this.exercises
         block
+    }
+
+    public String toString() {
+        "Scales: [ ${scaleC ? 'C ':''} ${scaleAm ? 'Am ':''}], Exercises: ${exercises}"
     }
 }
