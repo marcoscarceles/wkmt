@@ -53,6 +53,9 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.24'
         compile "org.jadira.usertype:usertype.jodatime:2.0.1"
+
+        //Used in Production's Heroku
+        runtime 'postgresql:postgresql:8.4-702.jdbc3'
     }
 
     plugins {
