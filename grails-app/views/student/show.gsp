@@ -28,9 +28,9 @@
 				<g:if test="${studentInstance?.lessons}">
 				<li class="fieldcontain">
 					<span id="lessons-label" class="property-label"><g:message code="student.lessons.label" default="Lessons" /></span>
-					
-						<g:each in="${studentInstance.lessons.reverse()}" var="l">
-						<span class="property-value" aria-labelledby="lessons-label"><g:link controller="lesson" action="show" id="${l.id}"><g:formatDate date="${l?.date}" type="date" style="long"/></g:link></span>
+					    <g:set var="lessonList" value="${studentInstance.lessons.reverse()}"/>
+						<g:each in="${lessonList}" var="l">
+						    <span class="property-value" aria-labelledby="lessons-label"><g:link controller="lesson" action="show" id="${l.id}"><g:formatDate date="${l?.date}" type="date" style="long"/></g:link></span>
 						</g:each>
 					
 				</li>
