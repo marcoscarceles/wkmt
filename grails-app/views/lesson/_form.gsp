@@ -10,7 +10,7 @@
 	<g:datePicker name="date" precision="day"  value="${lessonInstance?.date}"  />
 </div>
 
-<div class="practiced">
+<div class="study-block practiced">
     <h2>Practiced</h2>
     <g:render template="../studyBlock/form" model="[propertyName: 'practiced', studyBlockInstance: lessonInstance.practiced]"/>
     %{--<label for="practiced">--}%
@@ -20,7 +20,7 @@
     %{--<g:select id="practiced" name="practiced.id" from="${uk.co.makroos.wkmt.StudyBlock.list()}" optionKey="id" required="" value="${lessonInstance?.practiced?.id}" class="many-to-one"/>--}%
 </div>
 
-<div class="homework">
+<div class="study-block homework">
     <h2>Homework</h2>
     <g:render template="../studyBlock/form" model="[propertyName: 'homework', studyBlockInstance: lessonInstance.homework]"/>
 	%{--<label for="homework">--}%

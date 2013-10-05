@@ -23,29 +23,21 @@
 			<table>
 			<thead>
 					<tr>
-					
-						<g:sortableColumn property="exercises" title="${message(code: 'studyBlock.exercises.label', default: 'Exercises')}" />
-					
+
 						<th><g:message code="studyBlock.lesson.label" default="Lesson" /></th>
-					
-						<g:sortableColumn property="scaleAm" title="${message(code: 'studyBlock.scaleAm.label', default: 'Scale Am')}" />
-					
-						<g:sortableColumn property="scaleC" title="${message(code: 'studyBlock.scaleC.label', default: 'Scale C')}" />
-					
+
+						<g:sortableColumn property="exercises" title="${message(code: 'studyBlock.exercises.label', default: 'Exercises')}" />
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${studyBlockInstanceList}" status="i" var="studyBlockInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${studyBlockInstance.id}">${fieldValue(bean: studyBlockInstance, field: "exercises")}</g:link></td>
-					
-						<td>${fieldValue(bean: studyBlockInstance, field: "lesson")}</td>
-					
-						<td><g:formatBoolean boolean="${studyBlockInstance.scaleAm}" /></td>
-					
-						<td><g:formatBoolean boolean="${studyBlockInstance.scaleC}" /></td>
-					
+
+                        <td>${fieldValue(bean: studyBlockInstance, field: "lesson")}</td>
+
+                        <td><g:link action="show" id="${studyBlockInstance.id}">${fieldValue(bean: studyBlockInstance, field: "exercises")}</g:link></td>
+
 					</tr>
 				</g:each>
 				</tbody>

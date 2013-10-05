@@ -594,3 +594,33 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+/*
+ * WKMT
+ */
+
+.study-block {
+    margin-top: 20px;
+}
+.study-block h3{
+    margin-top: 10px;
+}
+
+div.scaleGoup {
+    clear:both;
+}
+
+div.scaleGoup div.fieldcontain {
+    width: 120px;
+    display: inline-block;
+}
+
+div.scaleGoup div.fieldcontain  label {
+    width: 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+div.fieldcontain  textarea {
+    width:100%;
+}
