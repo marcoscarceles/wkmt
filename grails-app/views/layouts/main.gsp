@@ -18,7 +18,8 @@
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
+		<div id="wkmtLogo" role="banner"><a href="http://http://www.piano-composer-teacher-london.co.uk"><img src="${resource(dir: 'images', file: 'wkmt_logo.jpg')}" alt="WKMT"/></a></div>
+        <g:render template="/layouts/nav"/>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

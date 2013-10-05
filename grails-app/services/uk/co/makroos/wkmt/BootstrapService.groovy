@@ -14,7 +14,13 @@ class BootstrapService {
         firstLesson.date = new Date()
         firstLesson.save()
         firstLesson.practiced = new StudyBlock(scaleC: true, exercises: "Table Excercise", lesson: firstLesson)
-        firstLesson.homework = new StudyBlock(scaleC: true, scaleAm: true, exercises: "Table Excercise\n Bartok 1-3\n\n --Cliking 'Next Lesson' will create a new Lesson based on this one! :D", lesson: firstLesson)
+        def exercises = """
+Table Exercise
+Bartok 1-3
+
+This is just an example of a lesson. Creating the next lesson is as simple as clicking 'Create Next' and it wil autopopulate with the 'Homework' from the previous one
+"""
+        firstLesson.homework = new StudyBlock(scaleC: true, scaleAm: true, exercises: exercises, lesson: firstLesson)
         marcos.addToLessons(firstLesson)
         marcos.save(flush:true)
     }

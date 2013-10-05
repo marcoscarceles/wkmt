@@ -19,6 +19,8 @@ class LessonController {
 
     def create() {
         def lesson = new Lesson(params)
+        lesson.practiced = new StudyBlock()
+        lesson.homework = new StudyBlock()
         respond lesson
     }
 

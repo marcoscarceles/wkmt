@@ -47,8 +47,8 @@ body {
 	        box-shadow: 0 0 0.3em #255b17;
 }
 
-#grailsLogo {
-	background-color: #abbf78;
+#wkmtLogo {
+	background-color: #71625b;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -89,7 +89,7 @@ img {
 
 /* GENERAL */
 
-#grailsLogo a {
+#wkmtLogo a {
 	display: inline-block;
 	margin: 1em;
 }
@@ -236,7 +236,7 @@ fieldset,
 
 .fieldcontain .property-value {
 	display: block;
-	margin-left: 27%;
+	margin-left: 30px;
 }
 
 label {
@@ -602,7 +602,7 @@ a.skip {
 .study-block {
     margin-top: 20px;
 }
-.study-block h3{
+h3 {
     margin-top: 10px;
 }
 
@@ -620,3 +620,12 @@ div.group div.fieldcontain  label {
 div.fieldcontain  textarea {
     width:100%;
 }
+
+.scale-group li.fieldcontain {
+    display: inline-block;
+}
+
+ol.exercise-list {
+    margin-left:10px !important;
+}
+
