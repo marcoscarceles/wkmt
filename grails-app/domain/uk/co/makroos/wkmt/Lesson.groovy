@@ -15,4 +15,11 @@ class Lesson {
     public String toString() {
         "${id} : ${date}"
     }
+
+    public Lesson createNext() {
+        def lesson = new Lesson()
+        lesson.practiced = homework.clone()
+        lesson.homework = homework.clone()
+        lesson
+    }
 }

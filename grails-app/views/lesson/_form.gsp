@@ -22,7 +22,7 @@
 
 <div class="homework">
     <h2>Homework</h2>
-    <g:render template="../studyBlock/form" model="[propertyName: 'homework', studyBlockInstance: lessonInstance.practiced]"/>
+    <g:render template="../studyBlock/form" model="[propertyName: 'homework', studyBlockInstance: lessonInstance.homework]"/>
 	%{--<label for="homework">--}%
 		%{--<g:message code="lesson.homework.label" default="Homework" />--}%
 		%{--<span class="required-indicator">*</span>--}%

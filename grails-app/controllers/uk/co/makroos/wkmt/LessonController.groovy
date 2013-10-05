@@ -46,6 +46,11 @@ class LessonController {
         }
     }
 
+    def createNext(Lesson lessonInstance) {
+        println "In Create Next!"
+        respond lessonInstance.createNext()
+    }
+
     def edit(Lesson lessonInstance) {
         respond lessonInstance
     }
