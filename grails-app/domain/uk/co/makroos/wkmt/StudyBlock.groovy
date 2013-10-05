@@ -10,5 +10,6 @@ class StudyBlock {
     static belongsTo = [lesson: Lesson]
 
     static constraints = {
+        exercises nullable: true, blank: false
     }
 }
