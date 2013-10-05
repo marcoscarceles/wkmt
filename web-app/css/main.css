@@ -606,17 +606,13 @@ a.skip {
     margin-top: 10px;
 }
 
-div.scaleGoup {
-    clear:both;
-}
-
-div.scaleGoup div.fieldcontain {
-    width: 120px;
+div.group div.fieldcontain {
+    width: 100px;
     display: inline-block;
 }
 
-div.scaleGoup div.fieldcontain  label {
-    width: 80px;
+div.group div.fieldcontain  label {
+    width: 50px;
     display: inline-block;
     text-align: left;
 }

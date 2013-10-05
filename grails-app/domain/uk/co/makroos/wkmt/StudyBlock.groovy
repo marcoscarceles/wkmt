@@ -27,6 +27,31 @@ class StudyBlock {
     boolean scaleG
     boolean scaleEm
 
+    boolean arpeggioC
+    boolean arpeggioAm
+    boolean arpeggioF
+    boolean arpeggioDm
+    boolean arpeggioBb
+    boolean arpeggioGm
+    boolean arpeggioEb
+    boolean arpeggioCm
+    boolean arpeggioAb
+    boolean arpeggioFm
+    boolean arpeggioDb
+    boolean arpeggioBbm
+    boolean arpeggioFsharp
+    boolean arpeggioEbm
+    boolean arpeggioB
+    boolean arpeggioAbm
+    boolean arpeggioE
+    boolean arpeggioCsharpm
+    boolean arpeggioA
+    boolean arpeggioFsharpm
+    boolean arpeggioD
+    boolean arpeggioBm
+    boolean arpeggioG
+    boolean arpeggioEm
+
     String exercises
 
     static belongsTo = [lesson: Lesson]
@@ -56,6 +81,32 @@ class StudyBlock {
         scaleBm()
         scaleG()
         scaleEm()
+
+        arpeggioC()
+        arpeggioAm()
+        arpeggioF()
+        arpeggioDm()
+        arpeggioBb()
+        arpeggioGm()
+        arpeggioEb()
+        arpeggioCm()
+        arpeggioAb()
+        arpeggioFm()
+        arpeggioDb()
+        arpeggioBbm()
+        arpeggioFsharp()
+        arpeggioEbm()
+        arpeggioB()
+        arpeggioAbm()
+        arpeggioE()
+        arpeggioCsharpm()
+        arpeggioA()
+        arpeggioFsharpm()
+        arpeggioD()
+        arpeggioBm()
+        arpeggioG()
+        arpeggioEm()
+
         exercises nullable: true, blank: false
     }
 
